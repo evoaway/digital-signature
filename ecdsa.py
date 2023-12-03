@@ -1,4 +1,3 @@
-import hashlib
 from hashlib import sha256
 
 from fastecdsa.curve import P256
