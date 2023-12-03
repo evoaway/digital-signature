@@ -15,9 +15,9 @@ An example of a signature using the `secp256k1` curve
 from fastecdsa import curve
 from ecdsa import *
 
-    priv_key = gen_private_key(curve.secp256k1)
-    pub_key = gen_public_key(priv_key, curve.secp256k1)
-    message = "Hello world, example text."
-    r, s = sign(message, priv_key, curve.secp256k1)
-    result = verify(message, r, s, pub_key, curve.secp256k1)
+priv_key = gen_private_key(curve.secp256k1)
+pub_key = gen_public_key(priv_key, curve.secp256k1)
+message = "Hello world, example text."
+r, s = sign(message, priv_key, curve.secp256k1)
+result = verify(message, r, s, pub_key, curve.secp256k1)
 ```
