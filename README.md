@@ -10,7 +10,7 @@ This implementation uses P256 as the default curve. The execution of the algorit
 * `sign` - returns signature (r, s). By default, the SHA-256 hash function is used
 * `verify` - returns signature verification result (true, false)
 # Usage
-An example of a signature using the `secp256k1` curve
+An example of a signature using the `secp256k1` curve:
 ```python
 from fastecdsa import curve
 from ecdsa import *
